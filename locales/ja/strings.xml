@@ -1,0 +1,153 @@
+<resources>
+    <!--!app_name=AirBattery-->
+
+    <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
+    <string name="explain_location_title">このアプリは位置情報アクセスを使用します</string>
+    <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
+    <string name="explain_location_description">AirPods / Beatsを探すためには、アプリが位置情報アクセスを必要とします。</string>
+
+    <!-- These strings are shown in the dialog at startup, when the user hasn't activated bluetooth.-->
+    <string name="no_bluetooth_granted_not_title">権限を許可してください</string>
+    <!-- These strings are shown in the dialog at startup, when the user hasn't activated bluetooth.-->
+    <string name="no_bluetooth_granted_not_description">このアプリは位置情報アクセスが許可されたときのみ作動します。やり直してください。</string>
+    <!-- These strings are shown in the dialog at startup, when the user hasn't activated bluetooth.; This is the string in the "retry" button.-->
+    <string name="no_bluetooth_granted_not_retry">やり直し</string>
+
+    <!--!string_battery_charge=%1$d%%-->
+    <!-- This string is shown, when the battery is full. It probably get's removed, as it was a way to remove the line break at 100%.-->
+    <string name="string_battery_full">いっぱい</string>
+
+    <!-- This is the standard message in the front screen, when the app doesn't receive anything.-->
+    <string name="no_bluetooth_case">ブルートゥース、位置情報をオンにしてケースを開いたりヘッドセットをつけたりしてください。</string>
+    <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today.-->
+    <string name="no_ble_support">この機器はブルートゥースLEを支援していないためにApple AirPods / Beatsの現在の充電状態をもたらすことはできません。</string>
+
+    <!-- This will be shown in the title of the notification.; Notification-->
+    <string name="not_title">AirBattery 状態</string>
+    <!-- This will be shown in the title of the notification.; This one is special as it only appears, when In-Ear-Detection is activated.-->
+    <string name="not_title_in_ear">(In-Ear活性化されている)</string>
+    <!-- This is the message of the notification. Also the string doesn't change.; So when there's is an error you can press the notification and it opens the app with more details.-->
+    <string name="no_bluetooth_not_description">エラーが発生しました。詳細内容を確認するにはお知らせを確認してください。</string>
+    <!-- This is the message of the notification. Also the string doesn't change.-->
+    <string name="not_nothing_to_show">AirPods / Beatsを見つけられません</string>
+    <!-- This is the message of the notification. Also the string doesn't change.; Should encourage the user to upgrade the application.-->
+    <string name="not_no_pro">リアルタイムバッテリー情報を確認するためにはProバージョンを購入してください。</string>
+    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
+    <string name="not_left">右: %1$d%% \t</string>
+    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
+    <string name="not_right">左: %1$d%% \t</string>
+    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
+    <string name="not_case">ケース: %1$d%%</string>
+    <!--!not_beatsX=BeatsX: %1$d%%-->
+    <!--!not_powerbeats3=Powerbeats3: %1$d%%-->
+    <!--!not_beatssolo3=Beats Solo3: %1$d%%-->
+    <!--!not_beatsstudio3=Beats Studio3: %1$d%%-->
+    <!--!not_unknown=%1$d%%-->
+
+    <!-- This is a button below the notification.; This one triggers the data and is only shown when In-Ear-Detection is off.-->
+    <string name="not_action_update">アップデート</string>
+    <!-- This is a button below the notification.; This one stops the running service that looks out for changes regarding the In-Ear-Detection.-->
+    <string name="not_action_stop">停止</string>
+
+    <!-- Information-->
+    <!--!developer_email=thermalcamera.app@gmail.com-->
+    <!--!faq_url=http://binaryblogger.de/portfolio/airbattery/-->
+    <!--!privacy_policy_url=http://thermcam.binaryblogger.de/privacy_policy_lhv.html-->
+    <!-- This is the shared message when pressing the "Share" button in the settings and sharing it with somebody.-->
+    <string name="share_text">このアプリを見てみてください:\n\n%s</string>
+    <!--!play_store_link=https://play.google.com/store/apps/details?id=%s-->
+    <!-- This is shown atop the app selector where you can choose the application you want to use for the sharing action.-->
+    <string name="share_selector_title">これでアプリをシェアする…</string>
+
+    <!-- Preferences; The name of the application window.-->
+    <string name="title_activity_settings">設定</string>
+
+    <!-- This is the category name that bundles all settings regarding the notification.-->
+    <string name="pref_notification">お知らせ</string>
+    <!-- A switch that enables / disables the notification. Can only be used in case the user doesn't use In-Ear-Detection.-->
+    <string name="pref_show_notification">お知らせ表示する</string>
+    <!-- Here you can select the maximum update frequency see at the end.-->
+    <string name="pref_update_frequency">バッテリー状態のアップデート最小時間間隔</string>
+    <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
+    <string name="pref_warning_notification">次未満のバッテリー残量について教えます…</string>
+    <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]; If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy)-->
+    <!-- This string is there to explain the user the behaviour of the settings above.-->
+    <string name="pref_notification_description">バッテリーを節約するため、お知らせを最小時間と30分の間の間隔で更新します。 正確な時間は、アンドロイドバッテリー管理状態によって異なりかねません。\nのお知らせを下に引いて手動でアップデートすることもできます。</string>
+    <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated. There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened.-->
+    <string name="pref_notification_gray_pro_summary">In-Ear認識機能を使用中なのでこのカテゴリは、非活性化されました。</string>
+
+    <!-- This is the category name that bundles all settings together that where I can't put them into their own groups.-->
+    <string name="preF_gui">機能</string>
+    <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
+    <string name="pref_automatic_open">自動的にパネル表紙/隠蔽する</string>
+    <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
+    <string name="pref_automatic_open_summary">AirPods / Beatsが連結/接続解除されるなりパネルを表示したり、隠します</string>
+    <!-- This is the title of an option that, if enabled, hides the app from the recent tasks-->
+    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
+    <string name="pref_automatic_ear">AirPod In-Ear認識機能使用(Spotify)</string>
+    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
+    <string name="pref_automatic_ear_summary">AirPodを外したら、自動的にSpotifyを一時中止します。</string>
+    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android); This string is added, because setting strings can't be to long, or they will be shortened by the system. That's why I needed to add an extra field where I go into greater detail.-->
+    <string name="pref_automatic_ear_description">ご注意:バッテリーを多く消耗します。\n In-Ear認識機能は、実験中であり、Apple AirPodsでのみ使用可能です。 SpotifyまたはNetflix、YouTube、BeyondPodのようないくつかのアプリでのみ動作します。 あなたのアプリでもこの機能が作動するかは直接使用して、ご確認してください。</string>
+    <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
+    <string name="pref_filter_multiple">機器フィルタリング</string>
+    <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
+    <string name="pref_filter_multiple_summary">周辺に様々な機器がある場合最、最も近いものを選択します</string>
+
+    <!-- This is the category name of all language related things.-->
+    <!-- This is the name of the list preference with which the language can be set.-->
+    <!-- This string marks the default language setting.-->
+    <!--!pref_help_translation=Do you want help translating the app into your language too or fill translation gaps? If so, please write me a mail with the 'Send feedback' button below.-->
+
+    <!-- This is the category name that bundles all settings together which don't have any affect on the app.-->
+    <string name="pref_about">このアプリについて</string>
+    <!-- FAQ: Frequently asked questions-->
+    <!-- Press it to open the mail app with my support mail.-->
+    <string name="pref_feedback">フィードバック送る</string>
+    <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet, except for the ads view, but that's a thing by Google)-->
+    <string name="pref_privacy_policy">個人情報政策</string>
+    <!-- Sends you to the Google Play store showing my app.-->
+    <string name="pref_rate_app">このアプリ評価する</string>
+    <!-- Recommend the app to your friends, …-->
+    <string name="pref_share">シェア</string>
+    <!-- This documents the Build version, which is added at the end later on. Especially interesting for me.-->
+    <string name="pref_build_version">ビルドバージョン:</string>
+    <!-- Notices which Open-Source-Libraries I'm using. Is opened in another view.-->
+    <string name="pref_notice">お知らせ</string>
+
+    <!-- This is a category that bundles the purchase things together.-->
+    <string name="settings_purchases_title">購入</string>
+    <!-- (get-pro); When you press it the In-App-Purchase workflow by Google starts.-->
+    <string name="settings_buy_pro_link_title">寄付した後広告のないプロヴァージョンを使用してください</string>
+    <!-- (restore-purchases)-->
+    <string name="settings_restore_purchases">購買記録の復元</string>
+
+    <!-- IAP-->
+    <string name="buy_pro">まずプロラインセンスを購入してください。</string>
+    <!-- A test that pops up, when the user has upgraded my app successfully.-->
+    <string name="buy_pro_thanks">アプリを購入していただいて、ありがとうございます。</string>
+    <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the title.-->
+    <string name="buy_pro_error_dialog_title">エラーが発生しました、</string>
+    <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the message.-->
+    <string name="buy_pro_error_dialog_message">グーグルのインエプ決済APIに接近する際にエラーがありました。ご不便をお掛けして申し訳ございません。</string>
+
+    <!-- You can choose between those options. They represent the maximal update frequency (see option above).; Arrays-->
+    <string name="array_pref_not_update_frequency_item_1">1分(多くのバッテリー使用)</string>
+    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
+    <string name="array_pref_not_update_frequency_item_2">5分</string>
+    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
+    <string name="array_pref_not_update_frequency_item_3">10分</string>
+    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
+    <string name="array_pref_not_update_frequency_item_4">30分(省エネ)</string>
+    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
+    <string name="array_pref_not_update_frequency_item_5">手動アップデート</string>
+
+    <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Dialogs; Title-->
+    <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Message-->
+    <!--!custom_language_warning_dialog_negative=@android:string/cancel-->
+    <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; The positive button-->
+
+    <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Title-->
+    <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Message-->
+    <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Positive button-->
+</resources>

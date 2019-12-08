@@ -2,33 +2,33 @@
     <!--!app_name=AirBattery-->
 
     <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
-    <string name="explain_location_title">Diese App benötigt Standortzugriff</string>
+    <string name="explain_location_title">Este app precisa de acesso à localização</string>
     <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
-    <string name="explain_location_description">Um deine AirPods / Beats zu erkennen, braucht diese App Standortzugriff.</string>
+    <string name="explain_location_description">Para achar seus AirPods / Beats este app precisa de acesso à localização.</string>
 
     <!--!string_battery_charge=%1$d%%-->
 
     <!-- This is the standard message in the front screen, when the app doesn't receive anything.-->
-    <string name="no_bluetooth_case">Bitte aktiviere Bluetooth, Standort und öffne das Ladecase / aktiviere dein Headset.</string>
+    <string name="no_bluetooth_case">Por favor, ative o Bluetooth, o Serviço de Localização e abra a caixa / ligue o headset.</string>
     <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today.-->
-    <string name="no_ble_support">Da dieses Telefon Bluetooth LE nicht unterstützt, ist es nicht möglich, den Ladestand der Apple AirPods / Beats zu lesen.</string>
+    <string name="no_ble_support">Dado que este telefone não suporta bluetooth de baixo consumo ou BLE não é possível ler o percentual de carga dos Apple AirPods / Beats.</string>
 
     <!-- This will be shown in the title of the notification.; Notification-->
-    <string name="not_title">AirBattery Status</string>
+    <string name="not_title">AirBattery Estado</string>
     <!-- This will be shown in the title of the notification.; This one is special as it only appears, when In-Ear-Detection is activated.-->
-    <string name="not_title_in_ear">(In-Ear an)</string>
+    <string name="not_title_in_ear">(In-Ear ligado)</string>
     <!-- This is the message of the notification. Also the string doesn't change.; So when there's is an error you can press the notification and it opens the app with more details.-->
-    <string name="no_bluetooth_not_description">Es ist ein Fehler aufgetreten. Klicke auf die Benachrichtigung für mehr.</string>
+    <string name="no_bluetooth_not_description">Houve um erro, veja as notificações para mais detalhes.</string>
     <!-- This is the message of the notification. Also the string doesn't change.-->
-    <string name="not_nothing_to_show">Keine AirPods / Beats gefunden</string>
+    <string name="not_nothing_to_show">Não foi possível encontrar AirPods / Beats</string>
     <!-- This is the message of the notification. Also the string doesn't change.; Should encourage the user to upgrade the application.-->
-    <string name="not_no_pro">Hol dir Pro für Live-Ladestand Informationen.</string>
+    <string name="not_no_pro">Obtenha pro para ver a informação de bateria em tempo real aqui.</string>
     <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
-    <string name="not_left">Links: %1$d%% \t</string>
+    <string name="not_left">Esquerda: %1$d%% \t</string>
     <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
-    <string name="not_right">Rechts: %1$d%% \t</string>
+    <string name="not_right">Direita: %1$d%% \t</string>
     <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
-    <string name="not_case">Ladecase: %1$d%%</string>
+    <string name="not_case">Caixa: %1$d%%</string>
     <!--!not_beatsX=BeatsX: %1$d%%-->
     <!--!not_powerbeats3=Powerbeats3: %1$d%%-->
     <!--!not_beatssolo3=Beats Solo3: %1$d%%-->
@@ -36,174 +36,154 @@
     <!--!not_unknown=%1$d%%-->
 
     <!-- This is a button below the notification.; This one triggers the data and is only shown when In-Ear-Detection is off.-->
-    <string name="not_action_update">Aktualisierung</string>
+    <string name="not_action_update">Atualizar</string>
     <!-- This is a button below the notification.; This one stops the running service that looks out for changes regarding the In-Ear-Detection.-->
-    <string name="not_action_stop">Stopp</string>
+    <string name="not_action_stop">Parar</string>
 
     <!-- Information-->
     <!--!developer_email=thermalcamera.app@gmail.com-->
     <!--!faq_url=http://binaryblogger.de/portfolio/airbattery/-->
     <!--!privacy_policy_url=http://thermcam.binaryblogger.de/privacy_policy_lhv.html-->
     <!-- This is the shared message when pressing the "Share" button in the settings and sharing it with somebody.-->
-    <string name="share_text">Diese App ist cool:\n\n%s</string>
+    <string name="share_text">Veja este app:\n\n%s</string>
     <!--!play_store_link=https://play.google.com/store/apps/details?id=%s-->
     <!-- This is shown atop the app selector where you can choose the application you want to use for the sharing action.-->
-    <string name="share_selector_title">Teile diese App mit…</string>
+    <string name="share_selector_title">Compartilhe este app com…</string>
 
     <!-- Preferences; The name of the application window.-->
-    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_activity_settings">Configurações</string>
 
     <!-- This is the category name that bundles all settings regarding the notification.-->
-    <string name="pref_notification">Benachrichtigung</string>
+    <string name="pref_notification">Notificação</string>
     <!-- A switch that enables / disables the notification. Can only be used in case the user doesn't use In-Ear-Detection.-->
-    <string name="pref_show_notification">Benachrichtigung einblenden</string>
+    <string name="pref_show_notification">Mostrar notificações</string>
     <!-- Here you can select the maximum update frequency see at the end.-->
-    <string name="pref_update_frequency">Maximale Aktualisierungshäufigkeit</string>
+    <string name="pref_update_frequency">Frequência máxima de atualização</string>
     <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
-    <string name="pref_warning_notification">Benachrichtigung für Batterie unter…</string>
+    <string name="pref_warning_notification">Notificar quando a bateria abaixo de…</string>
     <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]; If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy)-->
-    <string name="pref_warning_notification_never">Niemals</string>
+    <string name="pref_warning_notification_never">Nunca</string>
     <!-- This string is there to explain the user the behaviour of the settings above.-->
-    <string name="pref_notification_description">Die Benachrichtigung wird in einem Intervall zwischen der maximalen Aktualisierungshäufigkeit und 30 Minuten aktualisiert um Energie zu sparen.\nDie Benachrichtigung kann auch manuell aktualisiert werden.</string>
+    <string name="pref_notification_description">Para economizar energia a notificação será atualizada em um intervalo entre a frequencia máxima de atualização e 30 minutos.\n As notificações também podem ser atualizadas manualmente.</string>
     <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated. There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened.-->
-    <string name="pref_notification_gray_pro_summary">Diese Kategorie ist deaktiviert, da In-Ear-Erkennung aktiviert ist.</string>
+    <string name="pref_notification_gray_pro_summary">Esta categoria esta desabilitada porque In-Ear-Detection está ativado.</string>
 
     <!-- This is the category name that bundles all settings together where I can't put them into their own groups.-->
-    <string name="pref_behaviour">Verhalten</string>
-
-    <!-- LOCALIZATION NOTE (pref_h1_support, pref_h1_support_summary) The AirPods 2 can't be detected without trouble by Android. It needs a special mode, that must be available on the device. In this mode the messages are cached and send later to the app. That's why the AirPods 2 can't have In-Ear-Detection.-->
-    <string name="pref_h1_support">Unterstütze AirPods 2</string>
-    <string name="pref_h1_support_summary">Diese Einstellung verlangsamt die Reaktion auf verbundene AirPods / Beats. Deswegen wird auch die In-Ear-Detection deaktiviert. Nur für die neusten AirPods / Beats.</string>
-
+    <string name="pref_behaviour">Comportamento</string>
     <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
-    <string name="pref_automatic_ear">AirPod In-Ear-Detection (Spotify)</string>
+    <string name="pref_automatic_ear">AirPod Ear Detection (Descoberta de lado utlizado) Spotify</string>
     <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
-    <string name="pref_automatic_ear_summary">Spotify automatisch anhalten, wenn Sie einen AirPod entfernen.</string>
+    <string name="pref_automatic_ear_summary">Pausar Spotify automaticamente ao remover um AirPod.</string>
     <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android); This string is added, because setting strings can't be to long, or they will be shortened by the system. That's why I needed to add an extra field where I go into greater detail.-->
-    <string name="pref_automatic_ear_description">Warnung: Höherer Batterieverbrauch!!\nDie In-Ear-Detection ist experimentell und nur auf Apple AirPods verfügbar. Es funktioniert nur für eine Auswahl von Apps wie Spotify, Netflix, YouTube oder BeyondPod. Probiere es selbst ob es bei deiner App funktioniert.</string>
+    <string name="pref_automatic_ear_description">Alerta: Maior consumo de bateria!!\n Detecção de orelha é experimental e disponível apenas para Apple AirPods. Funciona apenas com alguns apps, como Spotify, Netflix, YouTube ou BeyondPod. Experimente se funciona em outros apps.</string>
     <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
-    <string name="pref_filter_multiple">Geräte filtern</string>
+    <string name="pref_filter_multiple">Filtrar dispositivos</string>
     <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
-    <string name="pref_filter_multiple_summary">Wählt das nächste Gerät aus, wenn mehrere vorhanden sind</string>
+    <string name="pref_filter_multiple_summary">Selecionar dispositivo mais próximo, se mais de um por perto</string>
 
     <!-- This preference category contains all GUI related stuff-->
     <string name="pref_gui">GUI</string>
     <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
-    <string name="pref_automatic_open">Automatisches Öffnen und Schließen</string>
+    <string name="pref_automatic_open">Abrir e fechar automaticamente</string>
     <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
-    <string name="pref_automatic_open_summary">Sobald Apple AirPods / Beats verbunden / getrennt sind</string>
+    <string name="pref_automatic_open_summary">Assim que Apple AirPods / Beats forem (des)conectados</string>
     <!-- This is the title of an option that, if enabled, hides the app from the recent tasks-->
-    <string name="pref_hide_from_recent">App in Recents Apps ausblenden</string>
+    <string name="pref_hide_from_recent">Esconder app das tarefas recentes</string>
 
-    <string name="pref_auto_hide_title">App nach ein paar Sekunden schließen</string>
+    <string name="pref_auto_hide_title">Fechar app com atraso</string>
 
 
     <!-- This is the category name of all language related things.-->
-    <string name="pref_language">Sprachen</string>
+    <string name="pref_language">Idioma</string>
     <!-- This is the name of the list preference with which the language can be set.-->
-    <string name="pref_custom_language">Sprache</string>
+    <string name="pref_custom_language">Idioma</string>
     <!-- This string marks the default language setting.-->
-    <string name="locale_default">Standard</string>
+    <string name="locale_default">Padrão</string>
     <!--!pref_help_translation=Do you want help translating the app into your language too or fill translation gaps? If so, please write me a mail with the 'Send feedback' button below.-->
 
     <!-- This is the category name that bundles all settings together which don't have any affect on the app.-->
-    <string name="pref_about">Über</string>
+    <string name="pref_about">Sobre</string>
     <!-- FAQ: Frequently asked questions-->
     <string name="pref_faq">FAQ</string>
     <!-- Press it to open the mail app with my support mail.-->
-    <string name="pref_feedback">Feedback senden</string>
+    <string name="pref_feedback">Enviar comentários</string>
     <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet, except for the ads view, but that's a thing by Google)-->
-    <string name="pref_privacy_policy">Datenschutzrichtlinien</string>
+    <string name="pref_privacy_policy">Política de privacidade</string>
     <!-- Sends you to the Google Play store showing my app.-->
-    <string name="pref_rate_app">Bewerte diese App</string>
+    <string name="pref_rate_app">Avalie o app</string>
     <!-- Recommend the app to your friends, …-->
-    <string name="pref_share">Teilen</string>
+    <string name="pref_share">Compartilhar</string>
     <!-- This documents the Build version, which is added at the end later on. Especially interesting for me.-->
-    <string name="pref_build_version">Build-Version:</string>
+    <string name="pref_build_version">Versão:</string>
     <!-- Notices which Open-Source-Libraries I'm using. Is opened in another view.-->
-    <string name="pref_notice">Beachten</string>
+    <string name="pref_notice">Aviso</string>
 
     <!-- This is a category that bundles the purchase things together.-->
-    <string name="settings_purchases_title">Einkäufe</string>
+    <string name="settings_purchases_title">Compras</string>
     <!-- (get-pro); When you press it the In-App-Purchase workflow by Google starts.-->
-    <string name="settings_buy_pro_link_title">Spenden Sie, um die Werbung zu entfernen und Pro-User zu werden.</string>
-    <string name="settings_buy_pro_trial_time">%1$d Tage Probezeit noch verbleibend</string>
-
-    <string name="settings_buy_airpods2">Kaufe Support für AirPods 2</string>
+    <string name="settings_buy_pro_link_title">Doe para remover publicidade e obter versão pro</string>
+    <!-- (restore-purchases)-->
+    <string name="settings_restore_purchases">Restabelecer compra</string>
 
     <!-- IAP-->
-    <string name="buy_pro">Bitte kaufen Sie zuerst die Pro-Lizenz.</string>
+    <string name="buy_pro">Primeiro compre a versão pro, por favor.</string>
     <!-- A test that pops up, when the user has upgraded my app successfully.-->
-    <string name="buy_pro_thanks">Vielen Dank für den Kauf der App.</string>
+    <string name="buy_pro_thanks">Obrigado por comprar o app.</string>
     <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the title.-->
-    <string name="buy_pro_error_dialog_title">Es ist ein Fehler augetreten,</string>
+    <string name="buy_pro_error_dialog_title">Houve um erro,</string>
     <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the message.-->
-    <string name="buy_pro_error_dialog_message">beim Versuch, auf die In App Purchase-API von Google zuzugreifen. Ich entschuldige mich für die Unannehmlichkeiten.</string>
+    <string name="buy_pro_error_dialog_message">na tentativa de acessar Compras Dentro do App na API do Google. Desculpe pelo inconveniente.</string>
 
     <!-- You can choose between those options. They represent the maximal update frequency (see option above).; Arrays-->
-    <string name="array_pref_not_update_frequency_item_1">1 Minute (Hoher Akkuverbrauch)</string>
+    <string name="array_pref_not_update_frequency_item_1">1 minuto (maior uso de bateria)</string>
     <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
-    <string name="array_pref_not_update_frequency_item_2">5 Minuten</string>
+    <string name="array_pref_not_update_frequency_item_2">5 minutos</string>
     <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
-    <string name="array_pref_not_update_frequency_item_3">10 Minuten</string>
+    <string name="array_pref_not_update_frequency_item_3">10 minutos</string>
     <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
-    <string name="array_pref_not_update_frequency_item_4">30 Minuten (niedriger Akkuverbrauch)</string>
+    <string name="array_pref_not_update_frequency_item_4">30 minutos (menor uso de bateria)</string>
     <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
-    <string name="array_pref_not_update_frequency_item_5">Manuell aktualisieren</string>
+    <string name="array_pref_not_update_frequency_item_5">Atualização manual</string>
 
     <!--!array_pref_auto_hide_item_1=@string/pref_warning_notification_never-->
     <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
-    <string name="array_pref_auto_hide_item_2">3 Sekunden</string>
+    <string name="array_pref_auto_hide_item_2">3 s</string>
     <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
-    <string name="array_pref_auto_hide_item_3">5 Sekunden</string>
+    <string name="array_pref_auto_hide_item_3">5 s</string>
     <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
-    <string name="array_pref_auto_hide_item_4">10 Sekunden</string>
+    <string name="array_pref_auto_hide_item_4">10 s</string>
     <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
-    <string name="array_pref_auto_hide_item_5">30 Sekunden</string>
+    <string name="array_pref_auto_hide_item_5">30 s</string>
 
     <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Dialogs; Title-->
-    <string name="custom_language_warning_dialog_title">Änderungen übernehmen?</string>
+    <string name="custom_language_warning_dialog_title">Aplicar mudanças</string>
     <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Message-->
-    <string name="custom_language_warning_dialog_message">Um die Änderungen zu übernehmen, muss die Applikation neu starten.</string>
+    <string name="custom_language_warning_dialog_message">É necessário reiniciar para aplicar as mudanças.</string>
     <!--!custom_language_warning_dialog_negative=@android:string/cancel-->
     <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; The positive button-->
-    <string name="custom_language_warning_dialog_positive">Neu starten</string>
+    <string name="custom_language_warning_dialog_positive">Reiniciar</string>
 
     <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Title-->
-    <string name="energy_measures_warning_dialog_title">Energiesparer deaktivieren</string>
+    <string name="energy_measures_warning_dialog_title">Desbilitar qualquer econimizador de bateria</string>
     <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Message-->
-    <string name="energy_measures_warning_dialog_message">Manche Smartphones schließen den laufenden Hinterprozess. Um auch dort das beste Erlebnis zu haben, empfiehlt es sich die app von allen Energiespar-Einstellungen zu entfernen. Frag deine bevorzugte Suchmachine wie man das macht.</string>
+    <string name="energy_measures_warning_dialog_message">Alguns telefones tendem a matar o processo em segundo plano. Se você quer a melhor experiência, remova o aplicativo de qualquer monitor de energia. Pergunte ao seu mecanismo de pesquisa sobre como fazer isso.</string>
     <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Positive button-->
-    <string name="energy_measures_warning_dialog_positive">Okay</string>
+    <string name="energy_measures_warning_dialog_positive">Entendido</string>
 
     <!-- When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
-    <string name="gps_disabled_warning_title">Standortdienste aktivieren</string>
+    <string name="gps_disabled_warning_title">Habilitar serviço de localização</string>
     <!-- When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
-    <string name="gps_disabled_warning_message">Dein GPS scheint deaktiviert zu sein. Möchtest Du es einschalten?</string>
+    <string name="gps_disabled_warning_message">Seu serviço de localização parece estar desabilitado. Gostaria de ativa-lo?</string>
     <!--!gps_disabled_warning_positive=@android:string/yes-->
     <!--!gps_disabled_warning_negative=@android:string/no-->
 
     <!-- Explain Location Activity; Information Activities-->
-    <string name="explain_location_act_title">Standort Berechtigung</string>
+    <string name="explain_location_act_title">Autorização de localização</string>
     <!-- Explain Location Activity-->
-    <string name="explain_location_act_message">Die App kann nur den Kopfhörer–Status empfangen, wenn sie Zugriff auf deinen Standort hat.\n\nSeit Android 6.0 können nur Apps mit der obigen Berechtigung Bluetooth LE Datenpakete lesen, da sie unteranderem auch die Möglichkeit bieten das Handy in einem Gebäude zu orten.</string>
+    <string name="explain_location_act_message">O aplicativo só pode receber o status de seus fones de ouvido quando tiver acesso à sua localização.\n\nDesde o Android 6.0 somente aplicativos com a permissão acima podem acessar os pacotes de dados Bluetooth LE, como podem (entre outros) também ser usados para localizar telefone em um prédio.</string>
     <!--!explain_location_act_negative=@android:string/cancel-->
     <!--!explain_location_act_positive_repeat=@string/energy_measures_warning_dialog_positive-->
     <!-- Explain Location Activity; When the user has enabled "always disable" the setting the activity will redirect to the settings.-->
-    <string name="explain_location_act_positive_redirect">Einstellungen öffnen</string>
-
-    <!-- LOCALIZATION NOTE (using_airpods2_title, using_airpods2_message) This message is shown on first run, as an easy way to enable the fast mode in the settings-->
-    <string name="using_airpods1_title">AirPods 2</string>
-    <string name="using_airpods1_message">Nutzt Du AirPods der 2. Generation?</string>
-    <!--!using_airpods2_negative=@android:string/no-->
-    <!--!using_airpods2_positive=@android:string/yes-->
-
-    <string name="buying_airpods2_support_title">AirPods 2</string>
-    <string name="buying_airpods2_support_message">Möchtest Du Support für die AirPods 2 kaufen?</string>
-    <string name="buying_airpods2_support_positive">Kaufen</string>
-    <string name="buying_airpods2_support_negative">Abbrechen</string>
-
-    <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2-->
-    <string name="h1_not_supported">Dein Gerät unterstützt die AirPods 2 nicht.</string>
+    <string name="explain_location_act_positive_redirect">Abrir configurações</string>
 
 </resources>
