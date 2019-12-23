@@ -1,42 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--!app_name=AirBattery-->
 
-    <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
+    <!-- LOCALIZATION NOTE (explain_location_title, explain_location_description): These strings
+    are used in the dialog at first startup to explain to the user that the app needs location access.
+    It's also shown, when the user has declined the permission. -->
     <string name="explain_location_title">이 앱은 위치 정보 액세스를 사용합니다</string>
-    <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
     <string name="explain_location_description">AirPods / Beats를 찾기 위해서는 앱이 위치 정보 액세스를 필요로 합니다.</string>
 
-    <!-- These strings are shown in the dialog at startup, when the user hasn't activated bluetooth.-->
-    <string name="no_bluetooth_granted_not_title">권한을 허가해주십시오</string>
-    <!-- These strings are shown in the dialog at startup, when the user hasn't activated bluetooth.-->
-    <string name="no_bluetooth_granted_not_description">이 앱은 위치 정보 액세스가 허가되었을 때만 작동합니다. 다시 시도해주십시오.</string>
-    <!-- These strings are shown in the dialog at startup, when the user hasn't activated bluetooth.; This is the string in the "retry" button.-->
-    <string name="no_bluetooth_granted_not_retry">재시도</string>
 
-    <!--!string_battery_charge=%1$d%%-->
-    <!-- This string is shown, when the battery is full. It probably get's removed, as it was a way to remove the line break at 100%.-->
-    <string name="string_battery_full">충전됨</string>
-
-    <!-- This is the standard message in the front screen, when the app doesn't receive anything.-->
+    <!-- This is the standard message in the front screen, when the app doesn't receive anything. -->
     <string name="no_bluetooth_case">블루투스, 위치 정보를 킨 후 케이스를 열거나 헤드셋을 켜 주십시오.</string>
-    <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today.-->
+    <!-- This is the standard message in the front screen if nothing was found and AirPods 2 support is off -->
+    <string name="airpods_activated">AirPods 2가 활성화되어 있습니까?</string>
+    <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today. -->
     <string name="no_ble_support">이 기기는 블루투스 LE를 지원하지 않기 때문에 Apple AirPods / Beats의 현재 충전 상태를 가져올 수 없습니다.</string>
 
-    <!-- This will be shown in the title of the notification.; Notification-->
+    <!-- Notification -->
+    <!-- LOCALIZATION NOTE (not_title, not_title_in_ear): This will be shown in the title of the notification. -->
     <string name="not_title">AirBattery 상태</string>
-    <!-- This will be shown in the title of the notification.; This one is special as it only appears, when In-Ear-Detection is activated.-->
+    <!-- This one is special as it only appears, when In-Ear-Detection is activated. -->
     <string name="not_title_in_ear">(In-Ear 활성화됨)</string>
-    <!-- This is the message of the notification. Also the string doesn't change.; So when there's is an error you can press the notification and it opens the app with more details.-->
+    <!-- LOCALIZATION NOTE (no_bluetooth_not_description, not_nothing_to_show, not_no_pro):
+     This is the message of the notification. Also the string doesn't change. -->
+    <!-- So when there's is an error you can press the notification and it opens the app with more details. -->
     <string name="no_bluetooth_not_description">에러가 발생하였습니다. 상세내용을 확인하려면 알림을 확인하십시오.</string>
-    <!-- This is the message of the notification. Also the string doesn't change.-->
     <string name="not_nothing_to_show">AirPods / Beats를 찾을 수 없습니다</string>
-    <!-- This is the message of the notification. Also the string doesn't change.; Should encourage the user to upgrade the application.-->
+    <!-- Should encourage the user to upgrade the application. -->
     <string name="not_no_pro">실시간 배터리 정보를 확인하기 위해서는 Pro버전을 구매하십시오.</string>
-    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
+    <!-- LOCALIZATION NOTE (not_left, not_right, not_case):
+    This is only part of the full string. It consists of three parts Left / Right AirPod and the Case.
+    Which parts are shown depends on what the application can see.
+    Please also add the "slash + t" at the end. It's important for the spacing. -->
     <string name="not_left">왼쪽: %1$d%% \t</string>
-    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
     <string name="not_right">오른쪽: %1$d%% \t</string>
-    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
     <string name="not_case">케이스: %1$d%%</string>
     <!--!not_beatsX=BeatsX: %1$d%%-->
     <!--!not_powerbeats3=Powerbeats3: %1$d%%-->
@@ -44,54 +41,62 @@
     <!--!not_beatsstudio3=Beats Studio3: %1$d%%-->
     <!--!not_unknown=%1$d%%-->
 
-    <!-- This is a button below the notification.; This one triggers the data and is only shown when In-Ear-Detection is off.-->
+    <!-- LOCALIZATION NOTE (not_action_update, not_action_stop):
+    This is a button below the notification. -->
+    <!-- This one triggers the data and is only shown when In-Ear-Detection is off. -->
     <string name="not_action_update">업데이트</string>
-    <!-- This is a button below the notification.; This one stops the running service that looks out for changes regarding the In-Ear-Detection.-->
+    <!-- This one stops the running service that looks out for changes regarding the In-Ear-Detection. -->
     <string name="not_action_stop">정지</string>
 
-    <!-- Information-->
-    <!--!developer_email=thermalcamera.app@gmail.com-->
-    <!--!faq_url=http://binaryblogger.de/portfolio/airbattery/-->
-    <!--!privacy_policy_url=http://thermcam.binaryblogger.de/privacy_policy_lhv.html-->
-    <!-- This is the shared message when pressing the "Share" button in the settings and sharing it with somebody.-->
+    <!-- Information -->
+    <!-- This is the shared message when pressing the "Share" button in the settings and sharing it with somebody. -->
     <string name="share_text">이 앱을 확인해보세요:\n\n%s</string>
-    <!--!play_store_link=https://play.google.com/store/apps/details?id=%s-->
-    <!-- This is shown atop the app selector where you can choose the application you want to use for the sharing action.-->
+    <!-- This is shown atop the app selector where you can choose the application you want to use for the sharing action. -->
     <string name="share_selector_title">다음으로 앱 공유하기…</string>
 
-    <!-- Preferences; The name of the application window.-->
+    <!-- Preferences -->
+    <!-- The name of the application window. -->
     <string name="title_activity_settings">설정</string>
 
-    <!-- This is the category name that bundles all settings regarding the notification.-->
+    <!-- This is the category name that bundles all settings regarding the notification. -->
     <string name="pref_notification">알림</string>
-    <!-- A switch that enables / disables the notification. Can only be used in case the user doesn't use In-Ear-Detection.-->
+    <!-- A switch that enables / disables the notification. Can only be used in case the user doesn't use In-Ear-Detection. -->
     <string name="pref_show_notification">알림 표시하기</string>
-    <!-- Here you can select the maximum update frequency see at the end.-->
+    <!-- Here you can select the maximum update frequency see at the end. -->
     <string name="pref_update_frequency">최소 배터리 업데이트 시간</string>
-    <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
+    <!-- LOCALIZATION NOTE (pref_warning_notification, pref_warning_notification_never):
+     Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
     <string name="pref_warning_notification">다음 미만의 배터리 잔량에 대해 알립니다…</string>
-    <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]; If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy)-->
-    <!-- This string is there to explain the user the behaviour of the settings above.-->
+    <!-- If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy) -->
+    <string name="pref_warning_notification_never">못</string>
+    <!-- This string is there to explain the user the behaviour of the settings above. -->
     <string name="pref_notification_description">배터리를 절약하기 위해 알림을 최소 시간과 30분 사이의 간격으로 업데이트합니다. 정확한 시간은 안드로이드 배터리 관리 상태에 따라 달라질 수 있습니다.\n 알림을 아래로 당겨서 수동으로 업데이트할 수도 있습니다.</string>
-    <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated. There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened.-->
+    <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated.
+    There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened. -->
     <string name="pref_notification_gray_pro_summary">In-Ear 인식 기능을 사용 중이기 때문에 이 카테고리는 비활성화되었습니다.</string>
 
-    <!-- This is the category name that bundles all settings together that where I can't put them into their own groups.-->
-    <string name="preF_gui">행동</string>
-    <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
-    <string name="pref_automatic_open">자동으로 열고 닫기</string>
-    <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
-    <string name="pref_automatic_open_summary">AirPods / Beats 가 연결/연결 해제되자마자 패널을 보이거나 숨깁니다</string>
-    <!-- This is the title of an option that, if enabled, hides the app from the recent tasks-->
-    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
+    <!-- This is the category name that bundles all settings together where I can't put them into their own groups. -->
+    <string name="pref_behaviour">행동</string>
+
+    <!-- LOCALIZATION NOTE (pref_h1_support, pref_h1_support_summary)
+     The AirPods 2 can't be detected without trouble by Android. It needs a special mode,
+      that must be available on the device. In this mode the messages are cached and send
+      later to the app. That's why the AirPods 2 doesn't always have In-Ear-Detection. -->
+    <string name="pref_h1_support">AirPods 2 지원</string>
+    <string name="pref_h1_support_summary_2">일부 휴대폰에서는이 설정을 이어폰 감지와 함께\내 감지와 함께 사용할 수 없습니다.
+</string>
+
+    <!-- LOCALIZATION NOTE (pref_automatic_ear, pref_automatic_ear_summary, pref_automatic_ear_description):
+     This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there
+      to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android) -->
     <string name="pref_automatic_ear">AirPod In-Ear 인식 기능 사용 (Spotify)</string>
-    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
     <string name="pref_automatic_ear_summary">AirPod을 빼면 자동으로 Spotify를 일시중지합니다.</string>
-    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android); This string is added, because setting strings can't be to long, or they will be shortened by the system. That's why I needed to add an extra field where I go into greater detail.-->
+    <!-- This string is added, because setting strings can't be to long, or they will be shortened by
+    the system. That's why I needed to add an extra field where I go into greater detail. -->
     <string name="pref_automatic_ear_description">주의: 배터리를 많이 소모합니다.\n In-Ear 인식 기능은 실험중이며 Apple AirPods에서만 사용 가능합니다. Spotify 또는 Netflix, YouTube, BeyondPod와 같은 몇몇 앱에서만 작동합니다. 귀하의 앱에서도 이 기능이 작동하는지는 직접 사용하여 확인하시기 바랍니다.</string>
-    <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
+    <!-- LOCALIZATION NOTE (pref_filter_multiple, pref_filter_multiple_summary): This is a setting
+    that activates the device filter that searches for the possible nearest device and tries to track it.-->
     <string name="pref_filter_multiple">기기 필터</string>
-    <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
     <string name="pref_filter_multiple_summary">주변에 여러 기기가 있는 경우 가장 가까운 것을 선택합니다</string>
 
     <!-- This is the category name of all language related things.-->
@@ -99,47 +104,71 @@
     <!-- This string marks the default language setting.-->
     <!--!pref_help_translation=Do you want help translating the app into your language too or fill translation gaps? If so, please write me a mail with the 'Send feedback' button below.-->
 
-    <!-- This is the category name that bundles all settings together which don't have any affect on the app.-->
+    <!-- This preference category contains all GUI related stuff -->
+    <string name="pref_gui">GUI</string>
+    <!-- LOCALIZATION NOTE (pref_automatic_open, pref_automatic_open_summary):
+        Open / close app automatically when the AirPods / Beats are (dis-)connected. -->
+    <string name="pref_automatic_open">자동으로 열고 닫기</string>
+    <string name="pref_automatic_open_summary">AirPods / Beats 가 연결/연결 해제되자마자 패널을 보이거나 숨깁니다</string>
+    <!-- This is the title of an option that, if enabled, hides the app from the recent tasks -->
+    <string name="pref_hide_from_recent">최근 작업에서 앱 숨기기</string>
+
+    <string name="pref_auto_hide_title">약간의 지연으로 앱 닫기</string>
+
+
+    <!-- This is the category name of all language related things.-->
+    <string name="pref_language">언어</string>
+    <!-- This is the name of the list preference with which the language can be set. -->
+    <string name="pref_custom_language">언어</string>
+    <!-- This string marks the default language setting. -->
+    <string name="locale_default">기본</string>
+
+    <!-- This is the category name that bundles all settings together which don't have any affect on the app. -->
     <string name="pref_about">기타</string>
-    <!-- FAQ: Frequently asked questions-->
-    <!-- Press it to open the mail app with my support mail.-->
+    <!-- FAQ: Frequently asked questions -->
+    <string name="pref_faq">FAQ</string>
+    <!-- Press it to open the mail app with my support mail. -->
     <string name="pref_feedback">피드백 보내기</string>
-    <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet, except for the ads view, but that's a thing by Google)-->
+    <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet,
+     except for the ads view, but that's a thing by Google) -->
     <string name="pref_privacy_policy">개인정보 정책</string>
-    <!-- Sends you to the Google Play store showing my app.-->
+    <!-- Sends you to the Google Play store showing my app. -->
     <string name="pref_rate_app">이 앱 평가하기</string>
-    <!-- Recommend the app to your friends, …-->
+    <!-- Recommend the app to your friends, … -->
     <string name="pref_share">공유하기</string>
-    <!-- This documents the Build version, which is added at the end later on. Especially interesting for me.-->
+    <!-- This documents the Build version, which is added at the end later on. Especially interesting for me. -->
     <string name="pref_build_version">빌드 버전:</string>
-    <!-- Notices which Open-Source-Libraries I'm using. Is opened in another view.-->
+    <!-- Notices which Open-Source-Libraries I'm using. Is opened in another view. -->
     <string name="pref_notice">공지사항</string>
 
-    <!-- This is a category that bundles the purchase things together.-->
+    <!-- This is a category that bundles the purchase things together. -->
     <string name="settings_purchases_title">구매</string>
-    <!-- (get-pro); When you press it the In-App-Purchase workflow by Google starts.-->
+    <!-- (get-pro) -->
+    <!-- When you press it the In-App-Purchase workflow by Google starts. -->
     <string name="settings_buy_pro_link_title">기부하신 후 광고 없는 프로버전을 사용하세요</string>
-    <!-- (restore-purchases)-->
-    <string name="settings_restore_purchases">구매기록 복원</string>
 
-    <!-- IAP-->
+    <string name="settings_buy_pro_trial_time">평가판 시간 %1$d 일 남음</string>
+
+    <string name="settings_buy_airpods2">AirPods 2 지원 구매</string>
+
+    <!-- IAP -->
     <string name="buy_pro">프로 라이센스를 먼저 구매해주세요.</string>
-    <!-- A test that pops up, when the user has upgraded my app successfully.-->
+    <!-- A test that pops up, when the user has upgraded my app successfully. -->
     <string name="buy_pro_thanks">앱을 구매해주셔서 감사합니다.</string>
-    <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the title.-->
+    <!-- LOCALIZATION NOTE (buy_pro_error_dialog_title, buy_pro_error_dialog_message):
+     This dialog pops up, when there was an error during the purchase workflow. Title and message are one text. -->
+    <!-- This is the title. -->
     <string name="buy_pro_error_dialog_title">에러가 발생하였습니다,</string>
-    <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the message.-->
+    <!-- This is the message. -->
     <string name="buy_pro_error_dialog_message">구글의 인앱 결제 API에 접근하는 데 에러가 있었습니다. 불편을 끼쳐 드려 죄송합니다.</string>
 
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).; Arrays-->
+    <!-- Arrays -->
+    <!-- LOCALIZATION NOTE (array_pref_not_update_frequency_item_1, array_pref_not_update_frequency_item_2, array_pref_not_update_frequency_item_3, array_pref_not_update_frequency_item_4, array_pref_not_update_frequency_item_5):
+       You can choose between those options. They represent the maximal update frequency (see option above). -->
     <string name="array_pref_not_update_frequency_item_1">1분 (많은 배터리 소모량)</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_2">5분</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_3">10분</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_4">30분 (적은 배터리 소모량)</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_5">수동 업데이트</string>
 
     <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Dialogs; Title-->
@@ -150,4 +179,63 @@
     <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Title-->
     <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Message-->
     <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Positive button-->
+
+    <!-- LOCALIZATION NOTE (array_pref_auto_hide_item_2, array_pref_auto_hide_item_3, array_pref_auto_hide_item_4, array_pref_auto_hide_item_5):
+     You can choose between those options. They represent the time after which the app will be closed automatically.-->
+    <string name="array_pref_auto_hide_item_2">3 초</string>
+    <string name="array_pref_auto_hide_item_3">5 초</string>
+    <string name="array_pref_auto_hide_item_4">10 초</string>
+    <string name="array_pref_auto_hide_item_5">30 초</string>
+
+    <!-- Dialogs -->
+    <!-- LOCALIZATION NOTE (custom_language_warning_dialog_title, custom_language_warning_dialog_message, custom_language_warning_dialog_positive):
+        This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option.
+        The user can also cancel the dialog, but this will not restore the selected language -->
+    <!-- Title -->
+    <string name="custom_language_warning_dialog_title">변경 승인</string>
+    <!-- Message -->
+    <string name="custom_language_warning_dialog_message">변경 사항을 적용하려면이 응용 프로그램을 다시 시작해야합니다.</string>
+    <!-- The positive button -->
+    <string name="custom_language_warning_dialog_positive">재시작</string>
+
+    <!-- LOCALIZATION NOTE (energy_measures_warning_dialog_title, energy_measures_warning_dialog_message, energy_measures_warning_dialog_positive):
+        This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if
+        it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect
+        and I don't want to make a Google request for everybody for them. -->
+    <!-- Title -->
+    <string name="energy_measures_warning_dialog_title">절전 기능 비활성화</string>
+    <!-- Message -->
+    <string name="energy_measures_warning_dialog_message">일부 전화는 백그라운드 프로세스를 중단시키는 경향이 있습니다. 최상의 경험을 원한다면 전원 모니터에서 앱을 제거하십시오. 이를 수행하는 방법 / 다음 화면 사용 방법에 대해서는 검색 엔진에 문의하십시오.</string>
+    <!-- Positive button -->
+    <string name="energy_measures_warning_dialog_positive">알았다</string>
+
+    <!-- LOCALIZATION NOTE (gps_disabled_warning_title, gps_disabled_warning_message):
+    When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
+    <string name="gps_disabled_warning_title">위치 서비스 사용</string>
+    <string name="gps_disabled_warning_message">위치 서비스가 사용 중지 된 것 같습니다. 활성화 하시겠습니까?</string>
+
+    <!-- LOCALIZATION NOTE ( -->
+    <string name="system_overlay_permission_title">백그라운드에서 시작 허용</string>
+    <string name="system_overlay_permission_message">AirPods / Beats가 연결되면 자동으로 시작하려면이 앱을 백그라운드에서 시작할 수 있어야합니다.</string>
+
+    <!-- Information Activities -->
+    <!-- LOCALIZATION NOTE (explain_location_act_title, explain_location_act_message, explain_location_act_positive_redirect): Explain Location Activity -->
+    <string name="explain_location_act_title">위치 허가</string>
+    <string name="explain_location_act_message">앱은 사용자의 위치에 액세스 할 수있는 경우에만 헤드폰 상태를 수신 할 수 있습니다. \n\n Android 6.0부터는 위 권한을 가진 앱만 블루투스 LE 데이터 패키지에 액세스 할 수 있습니다. 건물에 전화.</string>
+    <!-- When the user has enabled "always disable" the setting the activity will redirect to the settings. -->
+    <string name="explain_location_act_positive_redirect">설정 열기</string>
+
+    <!-- LOCALIZATION NOTE (using_airpods2_title, using_airpods2_message)
+     This message is shown on first run, as an easy way to enable the fast mode in the settings-->
+    <string name="using_airpods1_title">AirPods 1</string>
+    <string name="using_airpods1_message">AirPods v1 또는 이전 Beats (Apple W1 칩 사용)를 사용합니까?</string>
+
+    <string name="buying_airpods2_support_title">AirPods 2</string>
+    <string name="buying_airpods2_support_message">AirPods 2 지원을 구매 하시겠습니까?</string>
+    <string name="buying_airpods2_support_positive">구입</string>
+    <string name="buying_airpods2_support_negative">취소</string>
+
+    <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2 -->
+    <string name="h1_not_supported">장치가\기기가 AirPods 2를 지원하지 않습니다
+</string>
 </resources>
