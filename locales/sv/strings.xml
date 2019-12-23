@@ -1,33 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--!app_name=AirBattery-->
 
-    <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
+    <!-- LOCALIZATION NOTE (explain_location_title, explain_location_description): These strings
+    are used in the dialog at first startup to explain to the user that the app needs location access.
+    It's also shown, when the user has declined the permission. -->
     <string name="explain_location_title">Den här appen behöver tillgång till din plats</string>
-    <!-- These strings are used in the dialog at first startup to explain to the user that the app needs location access. It's also shown, when the user has declined the permission.-->
     <string name="explain_location_description">För att hitta dina AirPods / Beats behöver den här appen tillgång till din plats.</string>
 
     <!--!string_battery_charge=%1$d%%-->
 
-    <!-- This is the standard message in the front screen, when the app doesn't receive anything.-->
+
+    <!-- This is the standard message in the front screen, when the app doesn't receive anything. -->
     <string name="no_bluetooth_case">Vänligen aktivera bluetooth, ge platstillgång och öppna ditt fodral / starta dina lurar.</string>
-    <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today.-->
+    <!-- This is the standard message in the front screen if nothing was found and AirPods 2 support is off -->
+    <string name="airpods_activated">Är AirPods 2 aktiverade?</string>
+    <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today. -->
     <string name="no_ble_support">På grund av att den här telefonen inte har Bluetooth LE är det inte möjligt att läsa nuvarande laddning från några Apple AirPods / Beats.</string>
 
-    <!-- This will be shown in the title of the notification.; Notification-->
+    <!-- Notification -->
+    <!-- LOCALIZATION NOTE (not_title, not_title_in_ear): This will be shown in the title of the notification. -->
     <string name="not_title">AirBattery Status</string>
-    <!-- This will be shown in the title of the notification.; This one is special as it only appears, when In-Ear-Detection is activated.-->
+    <!-- This one is special as it only appears, when In-Ear-Detection is activated. -->
     <string name="not_title_in_ear">(In-Ear) på</string>
-    <!-- This is the message of the notification. Also the string doesn't change.; So when there's is an error you can press the notification and it opens the app with more details.-->
+    <!-- LOCALIZATION NOTE (no_bluetooth_not_description, not_nothing_to_show, not_no_pro):
+     This is the message of the notification. Also the string doesn't change. -->
+    <!-- So when there's is an error you can press the notification and it opens the app with more details. -->
     <string name="no_bluetooth_not_description">Något gick fel, läs notisen för mer information.</string>
-    <!-- This is the message of the notification. Also the string doesn't change.-->
     <string name="not_nothing_to_show">Kunde inte hitta några AirPods / Beats</string>
-    <!-- This is the message of the notification. Also the string doesn't change.; Should encourage the user to upgrade the application.-->
+    <!-- Should encourage the user to upgrade the application. -->
     <string name="not_no_pro">Skaffa pro för att se batteri information här.</string>
-    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
+    <!-- LOCALIZATION NOTE (not_left, not_right, not_case):
+    This is only part of the full string. It consists of three parts Left / Right AirPod and the Case.
+    Which parts are shown depends on what the application can see.
+    Please also add the "slash + t" at the end. It's important for the spacing. -->
     <string name="not_left">Vänster: %1$d%% \t</string>
-    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
     <string name="not_right">Höger: %1$d%% \t</string>
-    <!-- This is only part of the full string. It consists of three parts Left / Right AirPod and the Case. Which parts are shown depends on what the application can see. Please also add the "slash + t" at the end. It's important for the spacing.-->
     <string name="not_case">Fodral: %1$d%% \t</string>
     <!--!not_beatsX=BeatsX: %1$d%%-->
     <!--!not_powerbeats3=Powerbeats3: %1$d%%-->
@@ -35,59 +43,71 @@
     <!--!not_beatsstudio3=Beats Studio3: %1$d%%-->
     <!--!not_unknown=%1$d%%-->
 
-    <!-- This is a button below the notification.; This one triggers the data and is only shown when In-Ear-Detection is off.-->
+    <!-- LOCALIZATION NOTE (not_action_update, not_action_stop):
+    This is a button below the notification. -->
+    <!-- This one triggers the data and is only shown when In-Ear-Detection is off. -->
     <string name="not_action_update">Uppdatera</string>
-    <!-- This is a button below the notification.; This one stops the running service that looks out for changes regarding the In-Ear-Detection.-->
+    <!-- This one stops the running service that looks out for changes regarding the In-Ear-Detection. -->
     <string name="not_action_stop">Stoppa</string>
 
-    <!-- Information-->
-    <!--!developer_email=thermalcamera.app@gmail.com-->
-    <!--!faq_url=http://binaryblogger.de/portfolio/airbattery/-->
-    <!--!privacy_policy_url=http://thermcam.binaryblogger.de/privacy_policy_lhv.html-->
-    <!-- This is the shared message when pressing the "Share" button in the settings and sharing it with somebody.-->
+    <!-- Information -->
+    <!-- This is the shared message when pressing the "Share" button in the settings and sharing it with somebody. -->
     <string name="share_text">Ta en titt på den här appen:\n\n%s</string>
-    <!--!play_store_link=https://play.google.com/store/apps/details?id=%s-->
-    <!-- This is shown atop the app selector where you can choose the application you want to use for the sharing action.-->
+    <!-- This is shown atop the app selector where you can choose the application you want to use for the sharing action. -->
     <string name="share_selector_title">Dela appen med…</string>
 
-    <!-- Preferences; The name of the application window.-->
+    <!-- Preferences -->
+    <!-- The name of the application window. -->
     <string name="title_activity_settings">Inställningar</string>
 
-    <!-- This is the category name that bundles all settings regarding the notification.-->
+    <!-- This is the category name that bundles all settings regarding the notification. -->
     <string name="pref_notification">Notis</string>
-    <!-- A switch that enables / disables the notification. Can only be used in case the user doesn't use In-Ear-Detection.-->
+    <!-- A switch that enables / disables the notification. Can only be used in case the user doesn't use In-Ear-Detection. -->
     <string name="pref_show_notification">Visa notis</string>
-    <!-- Here you can select the maximum update frequency see at the end.-->
+    <!-- Here you can select the maximum update frequency see at the end. -->
     <string name="pref_update_frequency">Maximal uppdateringsfrekvens</string>
-    <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
+    <!-- LOCALIZATION NOTE (pref_warning_notification, pref_warning_notification_never):
+     Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
     <string name="pref_warning_notification">Notis när batteriet är mindre än…</string>
-    <!-- Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]; If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy)-->
+    <!-- If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy) -->
     <string name="pref_warning_notification_never">Aldrig</string>
-    <!-- This string is there to explain the user the behaviour of the settings above.-->
+    <!-- This string is there to explain the user the behaviour of the settings above. -->
     <string name="pref_notification_description">Notisen kommer uppdateras med en intervall mellan maximal frekvens och 30 min för att spara batteri.\n Notisen kan också uppdateras manuellt genom att dra ner notisen.</string>
-    <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated. There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened.-->
+    <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated.
+    There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened. -->
     <string name="pref_notification_gray_pro_summary">Den här kategorin avstängd, för att In-Ear-Detection är aktiverad.</string>
 
-    <!-- This is the category name that bundles all settings together where I can't put them into their own groups.-->
+    <!-- This is the category name that bundles all settings together where I can't put them into their own groups. -->
     <string name="pref_behaviour">Betéende</string>
-    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
+
+    <!-- LOCALIZATION NOTE (pref_h1_support, pref_h1_support_summary)
+     The AirPods 2 can't be detected without trouble by Android. It needs a special mode,
+      that must be available on the device. In this mode the messages are cached and send
+      later to the app. That's why the AirPods 2 doesn't always have In-Ear-Detection. -->
+    <string name="pref_h1_support">Stöd AirPods 2</string>
+    <string name="pref_h1_support_summary_2">På vissa telefoner kan denna inställning användas\inte användas i kombination med In-Ear-Detection.
+</string>
+
+    <!-- LOCALIZATION NOTE (pref_automatic_ear, pref_automatic_ear_summary, pref_automatic_ear_description):
+     This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there
+      to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android) -->
     <string name="pref_automatic_ear">AirPod Ear Detection (Spotify)</string>
-    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android)-->
     <string name="pref_automatic_ear_summary">Pausa automatiskt Spotify när du avlägsnar en AirPod.</string>
-    <!-- This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android); This string is added, because setting strings can't be to long, or they will be shortened by the system. That's why I needed to add an extra field where I go into greater detail.-->
+    <!-- This string is added, because setting strings can't be to long, or they will be shortened by
+    the system. That's why I needed to add an extra field where I go into greater detail. -->
     <string name="pref_automatic_ear_description">Varning: Högre batterianvändning!!\n Ear Detection är under utveckling och är bara möjlig på Apple Airpods. Det fungerar bara på vissa appar, såsom Spotify, Netflix, YouTube eller Beyond. Prova själv och se om det fungerar på din app.</string>
-    <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
+    <!-- LOCALIZATION NOTE (pref_filter_multiple, pref_filter_multiple_summary): This is a setting
+    that activates the device filter that searches for the possible nearest device and tries to track it.-->
     <string name="pref_filter_multiple">Filtrera enheter</string>
-    <!-- This is a setting that activates the device filter that searches for the possible nearest device and tries to track it.-->
     <string name="pref_filter_multiple_summary">Välj närmaste enhet, om fler är i närheten</string>
 
-    <!-- This preference category contains all GUI related stuff-->
+    <!-- This preference category contains all GUI related stuff -->
     <string name="pref_gui">GUI</string>
-    <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
+    <!-- LOCALIZATION NOTE (pref_automatic_open, pref_automatic_open_summary):
+        Open / close app automatically when the AirPods / Beats are (dis-)connected. -->
     <string name="pref_automatic_open">Öppna och stäng automatiskt</string>
-    <!-- Open / close app automatically when the AirPods / Beats are (dis-)connected.-->
     <string name="pref_automatic_open_summary">Så fort Apple AirPods / Beats är (bort)kopplade</string>
-    <!-- This is the title of an option that, if enabled, hides the app from the recent tasks-->
+    <!-- This is the title of an option that, if enabled, hides the app from the recent tasks -->
     <string name="pref_hide_from_recent">Dölj app från senaste använda app</string>
 
     <string name="pref_auto_hide_title">Stäng app med viss fördröjning</string>
@@ -95,95 +115,119 @@
 
     <!-- This is the category name of all language related things.-->
     <string name="pref_language">Språk</string>
-    <!-- This is the name of the list preference with which the language can be set.-->
+    <!-- This is the name of the list preference with which the language can be set. -->
     <string name="pref_custom_language">Språk</string>
-    <!-- This string marks the default language setting.-->
+    <!-- This string marks the default language setting. -->
     <string name="locale_default">Standard</string>
     <!--!pref_help_translation=Do you want help translating the app into your language too or fill translation gaps? If so, please write me a mail with the 'Send feedback' button below.-->
 
-    <!-- This is the category name that bundles all settings together which don't have any affect on the app.-->
+    <!-- This is the category name that bundles all settings together which don't have any affect on the app. -->
     <string name="pref_about">Om</string>
-    <!-- FAQ: Frequently asked questions-->
+    <!-- FAQ: Frequently asked questions -->
     <string name="pref_faq">FAQ</string>
-    <!-- Press it to open the mail app with my support mail.-->
+    <!-- Press it to open the mail app with my support mail. -->
     <string name="pref_feedback">Skicka feedback</string>
-    <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet, except for the ads view, but that's a thing by Google)-->
+    <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet,
+     except for the ads view, but that's a thing by Google) -->
     <string name="pref_privacy_policy">Sekretesspolicy</string>
-    <!-- Sends you to the Google Play store showing my app.-->
+    <!-- Sends you to the Google Play store showing my app. -->
     <string name="pref_rate_app">Betygsätt appen</string>
-    <!-- Recommend the app to your friends, …-->
+    <!-- Recommend the app to your friends, … -->
     <string name="pref_share">Dela</string>
-    <!-- This documents the Build version, which is added at the end later on. Especially interesting for me.-->
+    <!-- This documents the Build version, which is added at the end later on. Especially interesting for me. -->
     <string name="pref_build_version">Build version:</string>
-    <!-- Notices which Open-Source-Libraries I'm using. Is opened in another view.-->
+    <!-- Notices which Open-Source-Libraries I'm using. Is opened in another view. -->
     <string name="pref_notice">Notis</string>
 
-    <!-- This is a category that bundles the purchase things together.-->
+    <!-- This is a category that bundles the purchase things together. -->
     <string name="settings_purchases_title">Köp</string>
-    <!-- (get-pro); When you press it the In-App-Purchase workflow by Google starts.-->
+    <!-- (get-pro) -->
+    <!-- When you press it the In-App-Purchase workflow by Google starts. -->
     <string name="settings_buy_pro_link_title">Donera för att ta bort reklam och få pro</string>
-    <!-- (restore-purchases)-->
-    <string name="settings_restore_purchases">Återställ köp</string>
 
-    <!-- IAP-->
+    <string name="settings_buy_pro_trial_time">%1$d dagar av testtid kvar</string>
+
+    <string name="settings_buy_airpods2">Köp AirPods 2-stöd
+</string>
+
+    <!-- IAP -->
     <string name="buy_pro">Vänligen köp pro lisens fört.</string>
-    <!-- A test that pops up, when the user has upgraded my app successfully.-->
+    <!-- A test that pops up, when the user has upgraded my app successfully. -->
     <string name="buy_pro_thanks">Tack för att du köpte appen.</string>
-    <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the title.-->
+    <!-- LOCALIZATION NOTE (buy_pro_error_dialog_title, buy_pro_error_dialog_message):
+     This dialog pops up, when there was an error during the purchase workflow. Title and message are one text. -->
+    <!-- This is the title. -->
     <string name="buy_pro_error_dialog_title">Något gick fel,</string>
-    <!-- This dialog pops up, when there was an error during the purchase workflow. Title and message are one text.; This is the message.-->
+    <!-- This is the message. -->
     <string name="buy_pro_error_dialog_message">vid försök att nå In App Köp API från Google. Ursäkta oss för besväret.</string>
 
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).; Arrays-->
+    <!-- Arrays -->
+    <!-- LOCALIZATION NOTE (array_pref_not_update_frequency_item_1, array_pref_not_update_frequency_item_2, array_pref_not_update_frequency_item_3, array_pref_not_update_frequency_item_4, array_pref_not_update_frequency_item_5):
+       You can choose between those options. They represent the maximal update frequency (see option above). -->
     <string name="array_pref_not_update_frequency_item_1">1 minut (hög batterianvändning)</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_2">5 minuter</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_3">10 minuter</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_4">30 minuter (låg batterianvändning)</string>
-    <!-- You can choose between those options. They represent the maximal update frequency (see option above).-->
     <string name="array_pref_not_update_frequency_item_5">Uppdatera manuellt</string>
 
-    <!--!array_pref_auto_hide_item_1=@string/pref_warning_notification_never-->
-    <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
+    <!-- LOCALIZATION NOTE (array_pref_auto_hide_item_2, array_pref_auto_hide_item_3, array_pref_auto_hide_item_4, array_pref_auto_hide_item_5):
+     You can choose between those options. They represent the time after which the app will be closed automatically.-->
     <string name="array_pref_auto_hide_item_2">3s</string>
-    <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
     <string name="array_pref_auto_hide_item_3">5s</string>
-    <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
     <string name="array_pref_auto_hide_item_4">10 s</string>
-    <!-- You can choose between those options. They represent the time after which the app will be closed automatically.-->
     <string name="array_pref_auto_hide_item_5">30 s</string>
 
-    <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Dialogs; Title-->
+    <!-- Dialogs -->
+    <!-- LOCALIZATION NOTE (custom_language_warning_dialog_title, custom_language_warning_dialog_message, custom_language_warning_dialog_positive):
+        This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option.
+        The user can also cancel the dialog, but this will not restore the selected language -->
+    <!-- Title -->
     <string name="custom_language_warning_dialog_title">Tillämpa ändringar</string>
-    <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; Message-->
+    <!-- Message -->
     <string name="custom_language_warning_dialog_message">Appen måste startas om för att ändringarna ska få effekt.</string>
-    <!--!custom_language_warning_dialog_negative=@android:string/cancel-->
-    <!-- This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option. The user can also cancel the dialog, but this will not restore the selected language; The positive button-->
+    <!-- The positive button -->
     <string name="custom_language_warning_dialog_positive">Starta om</string>
 
-    <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Title-->
+    <!-- LOCALIZATION NOTE (energy_measures_warning_dialog_title, energy_measures_warning_dialog_message, energy_measures_warning_dialog_positive):
+        This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if
+        it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect
+        and I don't want to make a Google request for everybody for them. -->
+    <!-- Title -->
     <string name="energy_measures_warning_dialog_title">Inaktivera eventuella strömsparare</string>
-    <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Message-->
+    <!-- Message -->
     <string name="energy_measures_warning_dialog_message">Vissa telefoner tenderar att döda bakgrundsprocessen. Om du vill ha den bästa upplevelsen, ta bort appen från alla strömövervakare. Du kan hitta hur du gör det med t.e.x. google.</string>
-    <!-- This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect and I don't want to make a Google request for everybody for them.; Positive button-->
+    <!-- Positive button -->
     <string name="energy_measures_warning_dialog_positive">Jag förstår</string>
 
-    <!-- When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
+    <!-- LOCALIZATION NOTE (gps_disabled_warning_title, gps_disabled_warning_message):
+    When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
     <string name="gps_disabled_warning_title">Aktivera platstjänster</string>
-    <!-- When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
     <string name="gps_disabled_warning_message">Dina platstjänster ser ut att vara avstängda. Vill du aktivera dom?</string>
     <!--!gps_disabled_warning_positive=@android:string/yes-->
     <!--!gps_disabled_warning_negative=@android:string/no-->
 
-    <!-- Explain Location Activity; Information Activities-->
+    <!-- LOCALIZATION NOTE ( -->
+    <string name="system_overlay_permission_title">Låt börja från bakgrunden</string>
+    <string name="system_overlay_permission_message">För att automatiskt starta, när AirPods / Beats är anslutna, måste denna app tillåtas starta från bakgrund.</string>
+
+    <!-- Information Activities -->
+    <!-- LOCALIZATION NOTE (explain_location_act_title, explain_location_act_message, explain_location_act_positive_redirect): Explain Location Activity -->
     <string name="explain_location_act_title">Platstillgång</string>
-    <!-- Explain Location Activity-->
     <string name="explain_location_act_message">Appen kan bara ta emot statusen för dina hörlurar när den har tillgång till din plats.\n\nMed Android 6.0 kan endast appar med ovanstående behörighet få åtkomst till Bluetooth LE datapaket, vilket de (bland annat) kan användas för att lokalisera telefon i en byggnad.</string>
-    <!--!explain_location_act_negative=@android:string/cancel-->
-    <!--!explain_location_act_positive_repeat=@string/energy_measures_warning_dialog_positive-->
-    <!-- Explain Location Activity; When the user has enabled "always disable" the setting the activity will redirect to the settings.-->
+    <!-- When the user has enabled "always disable" the setting the activity will redirect to the settings. -->
     <string name="explain_location_act_positive_redirect">Öppna inställningar</string>
 
+    <!-- LOCALIZATION NOTE (using_airpods2_title, using_airpods2_message)
+     This message is shown on first run, as an easy way to enable the fast mode in the settings-->
+    <string name="using_airpods1_title">AirPods 1</string>
+    <string name="using_airpods1_message">Använder du AirPods v1 eller gamla Beats (med Apple W1-chip)?</string>
+
+    <string name="buying_airpods2_support_title">AirPods 2</string>
+    <string name="buying_airpods2_support_message">Vill du köpa AirPods 2-stöd?</string>
+    <string name="buying_airpods2_support_positive">Köpa</string>
+    <string name="buying_airpods2_support_negative">Annullera</string>
+
+    <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2 -->
+    <string name="h1_not_supported">Din enhet stöder\stöder inte AirPods 2
+</string>
 </resources>
