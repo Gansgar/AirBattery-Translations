@@ -3,12 +3,16 @@
     <!--!app_name=AirBattery-->
 
     <!-- LOCALIZATION NOTE (explain_location_title, explain_location_description): These strings
-    are used in the dialog at first startup to explain to the user that the app needs location access.
-    It's also shown, when the user has declined the permission. -->
+      are used in the dialog at first startup to explain to the user that the app needs location access.
+      It's also shown, when the user has declined the permission. -->
     <string name="explain_location_title">Quest\'applicazione richiede l\'accesso alla tua posizione</string>
     <string name="explain_location_description">Per trovare le tue AirPods/Beats quest\'app richiede l\'accesso alla tua posizione.</string>
 
     <!--!string_battery_charge=%1$d%%-->
+
+
+    <!-- First startup fragments -->
+
 
 
     <!-- This is the standard message in the front screen, when the app doesn't receive anything. -->
@@ -24,16 +28,16 @@
     <!-- This one is special as it only appears, when In-Ear-Detection is activated. -->
     <string name="not_title_in_ear">(In-Ear inserito)</string>
     <!-- LOCALIZATION NOTE (no_bluetooth_not_description, not_nothing_to_show, not_no_pro):
-     This is the message of the notification. Also the string doesn't change. -->
+       This is the message of the notification. Also the string doesn't change. -->
     <!-- So when there's is an error you can press the notification and it opens the app with more details. -->
     <string name="no_bluetooth_not_description">C\'è stato un errore, segui la notifica per maggiori informazioni.</string>
     <string name="not_nothing_to_show">Non è stato possibile trovare alcun dispositivo AirPods / Beats</string>
     <!-- Should encourage the user to upgrade the application. -->
     <string name="not_no_pro">Ottieni la versione Pro per vedere le informazioni sulla batteria qui.</string>
     <!-- LOCALIZATION NOTE (not_left, not_right, not_case):
-    This is only part of the full string. It consists of three parts Left / Right AirPod and the Case.
-    Which parts are shown depends on what the application can see.
-    Please also add the "slash + t" at the end. It's important for the spacing. -->
+      This is only part of the full string. It consists of three parts Left / Right AirPod and the Case.
+      Which parts are shown depends on what the application can see.
+      Please also add the "slash + t" at the end. It's important for the spacing. -->
     <string name="not_left">Sinistra: %1$d%% \t</string>
     <string name="not_right">Destra: %1$d%% \t</string>
     <string name="not_case">Custodia: %1$d%%</string>
@@ -44,7 +48,7 @@
     <!--!not_unknown=%1$d%%-->
 
     <!-- LOCALIZATION NOTE (not_action_update, not_action_stop):
-    This is a button below the notification. -->
+      This is a button below the notification. -->
     <!-- This one triggers the data and is only shown when In-Ear-Detection is off. -->
     <string name="not_action_update">Aggiorna</string>
     <!-- This one stops the running service that looks out for changes regarding the In-Ear-Detection. -->
@@ -67,44 +71,44 @@
     <!-- Here you can select the maximum update frequency see at the end. -->
     <string name="pref_update_frequency">Massimo intervallo di aggiornamento</string>
     <!-- LOCALIZATION NOTE (pref_warning_notification, pref_warning_notification_never):
-     Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
+       Here you can setup a notification that will popup, when the battery is below 'x'. [BETA]-->
     <string name="pref_warning_notification">Notifica quando la batteria è al di sotto di…</string>
     <!-- If you want to disable it, the warning percentage is "Never" (I know. Not the nicest way, but easy) -->
     <string name="pref_warning_notification_never">Mai</string>
     <!-- This string is there to explain the user the behaviour of the settings above. -->
     <string name="pref_notification_description">La notifica verrà aggiornata in un intervallo compreso tra il massimo e 30 minuti per conservare energia.\n La notifica può anche essere aggiornata manualmente trascinandola.</string>
     <!-- This string warns the user that the settings can't be used when In-Ear is on and is shown instead of the above, if the feature is activated.
-    There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened. -->
+      There're still to many who don't read this text, so I need to rethink how I communicate it. So prepare that this string will be shortened. -->
     <string name="pref_notification_gray_pro_summary">Questa categoria è disattivata, perché il rilevamento In-Ear è attivato.</string>
 
     <!-- This is the category name that bundles all settings together where I can't put them into their own groups. -->
     <string name="pref_behaviour">Comportamento</string>
 
     <!-- LOCALIZATION NOTE (pref_h1_support, pref_h1_support_summary)
-     The AirPods 2 can't be detected without trouble by Android. It needs a special mode,
-      that must be available on the device. In this mode the messages are cached and send
-      later to the app. That's why the AirPods 2 doesn't always have In-Ear-Detection. -->
+       The AirPods 2 can't be detected without trouble by Android. It needs a special mode,
+        that must be available on the device. In this mode the messages are cached and send
+        later to the app. That's why the AirPods 2 doesn't always have In-Ear-Detection. -->
     <string name="pref_h1_support">Supporta AirPods 2</string>
     <string name="pref_h1_support_summary_2">Su alcuni telefoni questa impostazione  può\non può essere utilizzata in combinazione con In-Ear-Detection.
 </string>
 
     <!-- LOCALIZATION NOTE (pref_automatic_ear, pref_automatic_ear_summary, pref_automatic_ear_description):
-     This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there
-      to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android) -->
+       This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there
+        to transfer the user that this doesn't work on all apps (due to non-standard playback designs in Android) -->
     <string name="pref_automatic_ear">Rilevamento inserimento in orecchio AirPod (Spotify)</string>
     <string name="pref_automatic_ear_summary">Metti in pausa automaticamente Spotify quando rimuovi un AirPod.</string>
     <!-- This string is added, because setting strings can't be to long, or they will be shortened by
-    the system. That's why I needed to add an extra field where I go into greater detail. -->
+      the system. That's why I needed to add an extra field where I go into greater detail. -->
     <string name="pref_automatic_ear_description">Attenzione: Consumo di batteria maggiore!!\nIl rilevamento In-Ear è sperimentale ed è disponibile solo su Apple AirPods. Questo funzionerà solo per alcune app, come Spotify, Netflix, YouTube o BeyondPod. Prova tu stesso a vedere se funziona con le tue app.</string>
     <!-- LOCALIZATION NOTE (pref_filter_multiple, pref_filter_multiple_summary): This is a setting
-    that activates the device filter that searches for the possible nearest device and tries to track it.-->
+      that activates the device filter that searches for the possible nearest device and tries to track it.-->
     <string name="pref_filter_multiple">Filtra dispositivi</string>
     <string name="pref_filter_multiple_summary">Seleziona il device più vicino, se ce ne sono di più nelle vicinanze</string>
 
     <!-- This preference category contains all GUI related stuff -->
     <string name="pref_gui">GUI</string>
     <!-- LOCALIZATION NOTE (pref_automatic_open, pref_automatic_open_summary):
-        Open / close app automatically when the AirPods / Beats are (dis-)connected. -->
+          Open / close app automatically when the AirPods / Beats are (dis-)connected. -->
     <string name="pref_automatic_open">Chiudi e apri automaticamente</string>
     <string name="pref_automatic_open_summary">Non appena le AirPods / Beats sono (dis)connesse</string>
     <!-- This is the title of an option that, if enabled, hides the app from the recent tasks -->
@@ -128,7 +132,7 @@
     <!-- Press it to open the mail app with my support mail. -->
     <string name="pref_feedback">Invia feedback</string>
     <!-- Revers to the privacy policy (which wasn't really updated since ever. I'm not using the internet,
-     except for the ads view, but that's a thing by Google) -->
+       except for the ads view, but that's a thing by Google) -->
     <string name="pref_privacy_policy">Politica di Privacy</string>
     <!-- Sends you to the Google Play store showing my app. -->
     <string name="pref_rate_app">Vota l\'app</string>
@@ -154,7 +158,7 @@
     <!-- A test that pops up, when the user has upgraded my app successfully. -->
     <string name="buy_pro_thanks">Grazie per aver acquistato l\'app.</string>
     <!-- LOCALIZATION NOTE (buy_pro_error_dialog_title, buy_pro_error_dialog_message):
-     This dialog pops up, when there was an error during the purchase workflow. Title and message are one text. -->
+       This dialog pops up, when there was an error during the purchase workflow. Title and message are one text. -->
     <!-- This is the title. -->
     <string name="buy_pro_error_dialog_title">C\'è stato un errore,</string>
     <!-- This is the message. -->
@@ -162,7 +166,7 @@
 
     <!-- Arrays -->
     <!-- LOCALIZATION NOTE (array_pref_not_update_frequency_item_1, array_pref_not_update_frequency_item_2, array_pref_not_update_frequency_item_3, array_pref_not_update_frequency_item_4, array_pref_not_update_frequency_item_5):
-       You can choose between those options. They represent the maximal update frequency (see option above). -->
+         You can choose between those options. They represent the maximal update frequency (see option above). -->
     <string name="array_pref_not_update_frequency_item_1">1 minuto (consumo batteria elevato)</string>
     <string name="array_pref_not_update_frequency_item_2">5 minuti</string>
     <string name="array_pref_not_update_frequency_item_3">10 minuti</string>
@@ -170,7 +174,7 @@
     <string name="array_pref_not_update_frequency_item_5">Aggiorna manualmente</string>
 
     <!-- LOCALIZATION NOTE (array_pref_auto_hide_item_2, array_pref_auto_hide_item_3, array_pref_auto_hide_item_4, array_pref_auto_hide_item_5):
-     You can choose between those options. They represent the time after which the app will be closed automatically.-->
+       You can choose between those options. They represent the time after which the app will be closed automatically.-->
     <string name="array_pref_auto_hide_item_2">3 secondi</string>
     <string name="array_pref_auto_hide_item_3">5 secondi</string>
     <string name="array_pref_auto_hide_item_4">10 secondi</string>
@@ -178,8 +182,8 @@
 
     <!-- Dialogs -->
     <!-- LOCALIZATION NOTE (custom_language_warning_dialog_title, custom_language_warning_dialog_message, custom_language_warning_dialog_positive):
-        This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option.
-        The user can also cancel the dialog, but this will not restore the selected language -->
+          This dialog is shown after the user selected another language. It warns the user that the app needs to restart in order for this to work and offers this option.
+          The user can also cancel the dialog, but this will not restore the selected language -->
     <!-- Title -->
     <string name="custom_language_warning_dialog_title">Salva cambiamenti</string>
     <!-- Message -->
@@ -188,9 +192,9 @@
     <string name="custom_language_warning_dialog_positive">Riavvia</string>
 
     <!-- LOCALIZATION NOTE (energy_measures_warning_dialog_title, energy_measures_warning_dialog_message, energy_measures_warning_dialog_positive):
-        This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if
-        it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect
-        and I don't want to make a Google request for everybody for them. -->
+          This dialog is shown, when the user sets the In-Ear-Detection button to true. It should make the user aware that the app works best if
+          it is removed from any energy saving measures, power monitors, … and that he shouldn't write to me for that. Every phone is different in this aspect
+          and I don't want to make a Google request for everybody for them. -->
     <!-- Title -->
     <string name="energy_measures_warning_dialog_title">Disabilita ogni risparmio energetico</string>
     <!-- Message -->
@@ -199,11 +203,13 @@
     <string name="energy_measures_warning_dialog_positive">Capito</string>
 
     <!-- LOCALIZATION NOTE (gps_disabled_warning_title, gps_disabled_warning_message):
-    When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
+      When the location services are disabled the app ask for activating them. Please insert for location services the name on Android used in your language. (e.g. in German it's GPS services)-->
     <string name="gps_disabled_warning_title">Attiva i servizi di localizzazione</string>
     <string name="gps_disabled_warning_message">Il servizio di localizzazione sembra disattivato. Vuoi attivarlo?</string>
     <!--!gps_disabled_warning_positive=@android:string/yes-->
     <!--!gps_disabled_warning_negative=@android:string/no-->
+
+    <string name="gps_disabled_warning_negative">Ignora per sempre</string>
 
     <!-- LOCALIZATION NOTE ( -->
     <string name="system_overlay_permission_title">Consenti avvio dallo sfondo</string>
@@ -216,16 +222,28 @@
     <!-- When the user has enabled "always disable" the setting the activity will redirect to the settings. -->
     <string name="explain_location_act_positive_redirect">Apri le impostazioni</string>
 
+    <!-- LOCALIZATION NOTE (device_selection_title, device_selection_message) This fragment allows you to select the devices you own. It's used to set the optimal settings for your setup -->
+    <string name="device_selection_title">Seleziona i tuoi dispositivi</string>
+    <string name="device_selection_message">Seleziona tutti i dispositivi che usi. Ciò personalizzerà l\'esperienza dell\'app in base alla tua situazione.</string>
+
+    <!-- LOCALIZATION NOTE (energy_restriction_redirect, energy_restriction_positive) This is part of the first startup dialogs -->
+    <string name="energy_restriction_redirect">Apri Impostazioni</string>
+    <string name="energy_restriction_positive">Ignorare</string>
+
+    <string name="request_location_redirect">Concedere l\'autorizzazione</string>
+
+    <string name="huawei_deter_title">Stai attento!</string>
+    <string name="huawei_deter_message">È noto che il produttore del telefono produce implementazioni Bluetooth difettose. Il supporto per la nuova generazione di cuffie Apple / Beats può essere limitato o non esistere affatto. Non c\'è soluzione per questo.</string>
+
     <!-- LOCALIZATION NOTE (using_airpods2_title, using_airpods2_message)
-     This message is shown on first run, as an easy way to enable the fast mode in the settings-->
+       This message is shown on first run, as an easy way to enable the fast mode in the settings-->
     <string name="using_airpods1_title">AirPods 1</string>
     <string name="using_airpods1_message">Usi AirPods v1 o vecchi Beats (usando il chip Apple W1)?</string>
 
-    <string name="buying_airpods2_support_title">AirPods 2</string>
-    <string name="buying_airpods2_support_message">Vuoi acquistare il supporto AirPods 2?</string>
-    <string name="buying_airpods2_support_positive">Acquistare</string>
-    <string name="buying_airpods2_support_negative">Annulla</string>
-
     <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2 -->
-    <string name="h1_not_supported">Il tuo dispositivo supporta\ non supporta AirPods 2</string>
+    <string name="h1_not_supported">Il tuo dispositivo supporta\non supporta le nuove cuffie Apple / Beats</string>
+
+
+    <!-- Device Names -->
+
 </resources>
