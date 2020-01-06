@@ -1,0 +1,5 @@
+basepath="locales"
+
+[[paths]]
+  reference = "values/strings.xml"
+  l10n = "values-{locale}/strings.xml"
