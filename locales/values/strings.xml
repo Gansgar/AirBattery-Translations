@@ -212,6 +212,7 @@
     <string name="device_selection_message">Select all the devices you use. This will tailor the experience of the app to your situation.</string>
 
     <!-- LOCALIZATION NOTE (energy_restriction_redirect, energy_restriction_positive) This is part of the first startup dialogs -->
+    <string name="energy_restriction_toast">Your system does not support this link.</string>
     <string name="energy_restriction_redirect">Open Settings</string>
     <string name="energy_restriction_positive">Ignore</string>
 
@@ -227,9 +228,5 @@
 
     <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2 -->
     <string name="h1_not_supported">Your device doesn\'t support new Apple / Beats headphones</string>
-
-
-    <!-- Device Names -->
-
 </resources>
 
