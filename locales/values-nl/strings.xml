@@ -18,7 +18,8 @@
     <!-- This is the standard message in the front screen, when the app doesn't receive anything. -->
     <string name="no_bluetooth_case">Activeer asltublieft bluetooth, locatievoorzieningen en open je case / zet je headset aan.</string>
     <!-- This is the standard message in the front screen if nothing was found and AirPods 2 support is off -->
-    <string name="airpods_activated">Er AirPods 2 aktiveret?</string>
+    <string name="airpods_activated"> Staan de AirPods 2 aan?
+</string>
     <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today. -->
     <string name="no_ble_support">Het is niet mogelijk om de actuele batterij niveau van Apple AirPods / Beats te lezen omdat je telefoon geen Bluetooth LE ondersteunt.</string>
 
@@ -88,9 +89,8 @@
        The AirPods 2 can't be detected without trouble by Android. It needs a special mode,
         that must be available on the device. In this mode the messages are cached and send
         later to the app. That's why the AirPods 2 doesn't always have In-Ear-Detection. -->
-    <string name="pref_h1_support">Support AirPods 2</string>
-    <string name="pref_h1_support_summary_2">På nogle telefoner kan denne indstilling ikke\bruges i kombination med In-Ear-Detection.
-</string>
+    <string name="pref_h1_support">Ondersteuning AirPods 2</string>
+    <string name="pref_h1_support_summary_2">Op sommige telefoons kan deze instelling\kan deze instelling niet gebruikt worden in combinatie met In-Ear-Detectie.</string>
 
     <!-- LOCALIZATION NOTE (pref_automatic_ear, pref_automatic_ear_summary, pref_automatic_ear_description):
        This setting is a switch that enables the AirPod Ear detection. The Spotify at the end is only there
@@ -151,7 +151,8 @@
 
     <string name="settings_buy_pro_trial_time">%1$d dage med prøvetid tilbage</string>
 
-    <string name="settings_buy_airpods2">Køb AirPods 2 support</string>
+    <string name="settings_buy_airpods2">Koop AirPods 2 ondersteuning
+</string>
 
     <!-- IAP -->
     <string name="buy_pro">Koop alstublieft eerst de pro licentie.</string>
@@ -209,7 +210,7 @@
     <!--!gps_disabled_warning_positive=@android:string/yes-->
     <!--!gps_disabled_warning_negative=@android:string/no-->
 
-    <string name="gps_disabled_warning_negative">Ignorer for evigt</string>
+    <string name="gps_disabled_warning_negative">Voor altijd negeren</string>
 
     <!-- LOCALIZATION NOTE ( -->
     <string name="system_overlay_permission_title">Tillad at starte fra baggrunden</string>
@@ -223,26 +224,30 @@
     <string name="explain_location_act_positive_redirect">Open instellingen</string>
 
     <!-- LOCALIZATION NOTE (device_selection_title, device_selection_message) This fragment allows you to select the devices you own. It's used to set the optimal settings for your setup -->
-    <string name="device_selection_title">Vælg dine enheder</string>
-    <string name="device_selection_message">Vælg alle de enheder, du bruger. Dette vil skræddersy appens oplevelse til din situation.
+    <string name="device_selection_title">Selecteer uw apparaten
+</string>
+    <string name="device_selection_message">Selecteer alle apparten die u gebruikt. Hiermee wordt de ervaring van de app aangepast aan uw situatie. 
 </string>
 
     <!-- LOCALIZATION NOTE (energy_restriction_redirect, energy_restriction_positive) This is part of the first startup dialogs -->
     <string name="energy_restriction_redirect">Åbn indstillinger</string>
-    <string name="energy_restriction_positive">Ignorere</string>
+    <string name="energy_restriction_positive"> Negeren
+</string>
 
-    <string name="request_location_redirect">Giv tilladelse</string>
+    <string name="request_location_redirect">Toestemming geven
+</string>
 
-    <string name="huawei_deter_title">Vær forsigtig!</string>
-    <string name="huawei_deter_message">Producenten af ​​din telefon er kendt for at producere defekte Bluetooth-implementeringer. Support til den nye generation af Apple / Beats-hovedtelefoner kan være begrænset eller eksisterer slet ikke. Der er ingen løsning på dette.</string>
+    <string name="huawei_deter_title">Opgelet!</string>
+    <string name="huawei_deter_message">Van de fabrikant van uw telefoon is bekend dat deze foutieve Bluetooth-implementaties produceert. Ondersteuning voor de nieuwe generatie Apple / Beats hoofdtelefoons kan hierdoor gelimiteerd zijn of niet bestaan. Hier is geen oplossing voor.</string>
 
     <!-- LOCALIZATION NOTE (using_airpods2_title, using_airpods2_message)
        This message is shown on first run, as an easy way to enable the fast mode in the settings-->
     <string name="using_airpods1_title">AirPods 1</string>
-    <string name="using_airpods1_message">Bruger du AirPods v1 eller gamle Beats (bruger Apple W1-chip)?</string>
+    <string name="using_airpods1_message">Gebruikt u AirPods v1 of oude Beats (gebruikmakend van de Apple W1 chip)?</string>
 
     <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2 -->
-    <string name="h1_not_supported">Din enhed understøtter\enhed understøtter ikke nye Apple / Beats-hovedtelefoner</string>
+    <string name="h1_not_supported">Uw apparaat ondersteuning\biedt geen ondersteuning voor nieuwe Apple / Beats hoofdtelefoons
+</string>
 
 
     <!-- Device Names -->
