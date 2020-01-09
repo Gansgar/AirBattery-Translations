@@ -20,7 +20,7 @@
     <!-- This is the standard message in the front screen if nothing was found and AirPods 2 support is off -->
     <string name="airpods_activated">Sind AirPods 2 aktiviert?</string>
     <!-- This message is shown when the phone doesn't support Bluetooth LE (or 4.0) which is probably (and hopefully) very rare today. -->
-    <string name="no_ble_support">Da dieses Telefon Bluetooth LE unterstützt\nicht unterstützt, ist es möglich\nicht möglich, den Ladestand der Apple AirPods / Beats zu lesen.</string>
+    <string name="no_ble_support">Da dieses Telefon Bluetooth LE nicht unterstützt, ist es nicht möglich, den Ladestand der Apple AirPods / Beats zu lesen.</string>
 
     <!-- Notification -->
     <!-- LOCALIZATION NOTE (not_title, not_title_in_ear): This will be shown in the title of the notification. -->
@@ -225,7 +225,6 @@
     <string name="device_selection_title">Wähle Ihr Gerät aus</string>
     <string name="device_selection_message">Wählen Sie alle von Ihnen verwendeten Geräte aus. Dadurch wird die Erfahrung der App auf Ihre Situation zugeschnitten.</string>
 
-    <!-- LOCALIZATION NOTE (energy_restriction_redirect, energy_restriction_positive) This is part of the first startup dialogs -->
     <string name="energy_restriction_redirect">Einstellungen öffnen</string>
     <string name="energy_restriction_positive">Ignorieren</string>
 
@@ -242,7 +241,7 @@
     <!--!using_airpods2_positive=@android:string/yes-->
 
     <!-- Device doesn't support OffloadedScanBatching i.e. doesn't support AirPods 2 -->
-    <string name="h1_not_supported">Dein Gerät unterstützt\unterstützt nicht die neuen Apple / Beats Kopfhörer</string>
+    <string name="h1_not_supported">Dein Gerät unterstützt nicht die neuen Apple / Beats Kopfhörer</string>
 
 
     <!-- Device Names -->
